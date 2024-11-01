@@ -31,7 +31,12 @@ using (var scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseHttpsRedirection();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "KBoardDot API");
+        options.DefaultModelRendering(ModelRendering.Model);
+    });
 }
 
 app.UseHttpsRedirection();
