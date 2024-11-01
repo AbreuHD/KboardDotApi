@@ -10,8 +10,22 @@
     <Folder Include="Dtos\Account\Register\" />
     <Folder Include="Features\Email\Queries\" />
     <Folder Include="Features\ForgotPSW\" />
-    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Repositories\Category\" />
+    <Folder Include="Interfaces\Repositories\Characteristics\" />
+    <Folder Include="Interfaces\Repositories\Invoice\" />
+    <Folder Include="Interfaces\Repositories\Leads\" />
+    <Folder Include="Interfaces\Repositories\Product\" />
+    <Folder Include="Interfaces\Repositories\Source\" />
+    <Folder Include="Interfaces\Repositories\Taxes\" />
+    <Folder Include="Interfaces\Services\Category\" />
+    <Folder Include="Interfaces\Services\Characteristics\" />
+    <Folder Include="Interfaces\Services\Invoice\" />
+    <Folder Include="Interfaces\Services\Leads\" />
+    <Folder Include="Interfaces\Services\Source\" />
+    <Folder Include="Interfaces\Services\Taxes\" />
+    <Folder Include="Interfaces\Services\Product\" />
     <Folder Include="Mappings\" />
+    <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
