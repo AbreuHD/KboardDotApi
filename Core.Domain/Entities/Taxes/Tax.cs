@@ -12,6 +12,6 @@ namespace Core.Domain.Entities.Taxes
         public string Name { get; set; }
         public double Rate { get; set; }
         
-        public Product_Tax Product_Tax { get; set; }
+        public ICollection<Product_Tax> Product_Tax { get; set; }
     }
 }

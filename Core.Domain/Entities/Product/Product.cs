@@ -23,7 +23,7 @@ namespace Core.Domain.Entities.Product
 
         public ICollection<Product_Category> Product_Categories { get; set; }
         public ICollection<Characteristic_Product> Characteristic_Products { get; set; }
-        public ICollection<Product_invoice> Product_Invoices { get; set; }
+        public ICollection<Product_Invoice> Product_Invoices { get; set; }
         public ICollection<Source_Product> Source_Product { get; set; }
         public ICollection<Product_Tax> Product_Tax { get; set; }
     }
