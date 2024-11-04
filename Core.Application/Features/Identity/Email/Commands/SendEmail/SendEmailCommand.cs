@@ -4,7 +4,7 @@ using MediatR;
 using MimeKit;
 using Core.Application.Helpers.Mail;
 
-namespace Core.Application.Features.Email.Commands.SendEmail
+namespace Core.Application.Features.Identity.Email.Commands.SendEmail
 {
     public class SendEmailCommand : IRequest<bool>
     {

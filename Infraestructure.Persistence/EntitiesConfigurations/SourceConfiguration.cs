@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Infraestructure.Persistence.EntitiesConfigurations
 {
-    public class SourceConfiguration : IEntityTypeConfiguration<Source_ProductsConfiguration>
+    public class SourceConfiguration : IEntityTypeConfiguration<Source>
     {
-        public void Configure(EntityTypeBuilder<Source_ProductsConfiguration> builder)
+        public void Configure(EntityTypeBuilder<Source> builder)
         {
             builder.ToTable("Source");
             builder.HasKey(x => x.ID);

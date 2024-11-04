@@ -1,12 +1,12 @@
 ﻿using Core.Application.Dtos.Generic;
 using Core.Application.Entities;
-using Core.Application.Features.Email.Commands.SendEmail;
+using Core.Application.Features.Identity.Email.Commands.SendEmail;
 using Core.Application.Helpers.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
 
-namespace Core.Application.Features.Register.Commands.SendValidationEmailAgain
+namespace Core.Application.Features.Identity.Register.Commands.SendValidationEmailAgain
 {
     public class SendValidationEmailAgainCommand : IRequest<GenericApiResponse<string>>
     {

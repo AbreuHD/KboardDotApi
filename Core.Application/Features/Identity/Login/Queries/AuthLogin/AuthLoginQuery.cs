@@ -11,7 +11,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Core.Application.Features.Login.Queries.AuthLogin
+namespace Core.Application.Features.Identity.Login.Queries.AuthLogin
 {
     public class AuthLoginQuery : IRequest<GenericApiResponse<AuthenticationResponse>>
     {

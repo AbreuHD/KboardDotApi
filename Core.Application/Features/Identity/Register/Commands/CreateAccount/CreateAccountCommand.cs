@@ -4,9 +4,9 @@ using Core.Application.Helpers.Identity;
 using Core.Application.Dtos.Generic;
 using Core.Application.Entities;
 using Core.Application.Enums;
-using Core.Application.Features.Email.Commands.SendEmail;
+using Core.Application.Features.Identity.Email.Commands.SendEmail;
 
-namespace Core.Application.Features.Register.Commands.CreateAccount
+namespace Core.Application.Features.Identity.Register.Commands.CreateAccount
 {
     public class CreateAccountCommand : IRequest<GenericApiResponse<string>>
     {

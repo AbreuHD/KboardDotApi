@@ -1,7 +1,7 @@
-﻿using Core.Application.Features.AuthenticateEmail.Command.AuthEmail;
-using Core.Application.Features.Login.Queries.AuthLogin;
-using Core.Application.Features.Register.Commands.CreateAccount;
-using Core.Application.Features.Register.Commands.SendValidationEmailAgain;
+﻿using Core.Application.Features.Identity.AuthenticateEmail.Command.AuthEmail;
+using Core.Application.Features.Identity.Login.Queries.AuthLogin;
+using Core.Application.Features.Identity.Register.Commands.CreateAccount;
+using Core.Application.Features.Identity.Register.Commands.SendValidationEmailAgain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

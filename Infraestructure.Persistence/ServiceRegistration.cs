@@ -1,4 +1,5 @@
-﻿using Infraestructure.Persistence.Context;
+﻿using Core.Application.Interfaces.Repositories;
+using Infraestructure.Persistence.Context;
 using Infraestructure.Persistence.Repositories;
 using KboardDotApi.Core.Application.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +18,14 @@ namespace Infraestructure.Persistence
                     m.MigrationsAssembly(typeof(KboardDotContext).Assembly.FullName).SchemaBehavior(MySqlSchemaBehavior.Ignore)));
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            //services.AddTransient<IScrapPageRepository, ScrapPageRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<ICharacteristics_ProductRepository, Characteristics_ProductRepository>();
+            services.AddTransient<ICharacteristicsRepository, CharacteristicsRepository>();
+            services.AddTransient<IProduct_CategoryRepository, Product_CategoryRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ISource_ProductRepository, Source_ProductRepository>();
+            services.AddTransient<ISourceRepository, SourceRepository>();
+            services.AddTransient<ITrackingTypeRepository, TrackingTypeRepository>();
         }
     }
 }

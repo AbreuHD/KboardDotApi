@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Application.Features.AuthenticateEmail.Command.AuthEmail
+namespace Core.Application.Features.Identity.AuthenticateEmail.Command.AuthEmail
 {
     public class AuthEmailCommand : IRequest<GenericApiResponse<string>>
     {

@@ -7,26 +7,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Interfaces\Repositories\Characteristics\**" />
+    <Compile Remove="Interfaces\Repositories\Invoice\**" />
+    <Compile Remove="Interfaces\Repositories\Leads\**" />
+    <Compile Remove="Interfaces\Repositories\Product\**" />
+    <Compile Remove="Interfaces\Repositories\Source\**" />
+    <Compile Remove="Interfaces\Repositories\Taxes\**" />
+    <Compile Remove="ViewModels\**" />
+    <EmbeddedResource Remove="Interfaces\Repositories\Characteristics\**" />
+    <EmbeddedResource Remove="Interfaces\Repositories\Invoice\**" />
+    <EmbeddedResource Remove="Interfaces\Repositories\Leads\**" />
+    <EmbeddedResource Remove="Interfaces\Repositories\Product\**" />
+    <EmbeddedResource Remove="Interfaces\Repositories\Source\**" />
+    <EmbeddedResource Remove="Interfaces\Repositories\Taxes\**" />
+    <EmbeddedResource Remove="ViewModels\**" />
+    <None Remove="Interfaces\Repositories\Characteristics\**" />
+    <None Remove="Interfaces\Repositories\Invoice\**" />
+    <None Remove="Interfaces\Repositories\Leads\**" />
+    <None Remove="Interfaces\Repositories\Product\**" />
+    <None Remove="Interfaces\Repositories\Source\**" />
+    <None Remove="Interfaces\Repositories\Taxes\**" />
+    <None Remove="ViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Dtos\Account\Register\" />
-    <Folder Include="Features\Email\Queries\" />
-    <Folder Include="Features\ForgotPSW\" />
-    <Folder Include="Interfaces\Repositories\Category\" />
-    <Folder Include="Interfaces\Repositories\Characteristics\" />
-    <Folder Include="Interfaces\Repositories\Invoice\" />
-    <Folder Include="Interfaces\Repositories\Leads\" />
-    <Folder Include="Interfaces\Repositories\Product\" />
-    <Folder Include="Interfaces\Repositories\Source\" />
-    <Folder Include="Interfaces\Repositories\Taxes\" />
-    <Folder Include="Interfaces\Services\Category\" />
-    <Folder Include="Interfaces\Services\Characteristics\" />
-    <Folder Include="Interfaces\Services\Invoice\" />
-    <Folder Include="Interfaces\Services\Leads\" />
-    <Folder Include="Interfaces\Services\Source\" />
-    <Folder Include="Interfaces\Services\Taxes\" />
-    <Folder Include="Interfaces\Services\Product\" />
+    <Folder Include="Features\Identity\Email\Queries\" />
+    <Folder Include="Features\Identity\ForgotPSW\" />
     <Folder Include="Mappings\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +48,10 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.10" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>
