@@ -1,4 +1,4 @@
-﻿using Core.Domain.Entities.Product;
+﻿using Core.Domain.Entities.Taxes;
 using KboardDotApi.Core.Application.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace Core.Application.Interfaces.Repositories
 {
-    public interface IProductRepository : IGenericRepository<Product>
+    public interface ITaxRepository : IGenericRepository<Tax>
     {
-        Task<List<Product>> SearchProduct(string? Name, int? CategoryId, int Page, int Quantity);
     }
 }

@@ -26,6 +26,8 @@ namespace Infraestructure.Persistence
             services.AddTransient<ISource_ProductRepository, Source_ProductRepository>();
             services.AddTransient<ISourceRepository, SourceRepository>();
             services.AddTransient<ITrackingTypeRepository, TrackingTypeRepository>();
+            services.AddTransient<ITaxRepository, TaxRepository>();
+            services.AddTransient<IProduct_TaxRepository, Product_TaxRepository>();
         }
     }
 }

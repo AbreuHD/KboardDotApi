@@ -34,7 +34,6 @@
     <Folder Include="Dtos\Account\Register\" />
     <Folder Include="Features\Identity\Email\Queries\" />
     <Folder Include="Features\Identity\ForgotPSW\" />
-    <Folder Include="Mappings\" />
   </ItemGroup>
 
   <ItemGroup>
