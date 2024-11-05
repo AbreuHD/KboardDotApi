@@ -1,5 +1,4 @@
-﻿using Core.Domain.Entities.Auditable;
-using Core.Domain.Entities.Category;
+﻿using Core.Domain.Entities.Category;
 using Core.Domain.Entities.Characteristics;
 using Core.Domain.Entities.Invoice;
 using Core.Domain.Entities.Source;
@@ -10,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Domain.Entities.Product
+namespace Core.Application.Dtos.Inventory.Response
 {
-    public class Product : AuditableBase
+    public class DetailsProductResponseDto
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -21,10 +20,9 @@ namespace Core.Domain.Entities.Product
         public double BuyPrice { get; set; }
         public int Stock { get; set; }
 
-        public ICollection<Product_Category> Product_Categories { get; set; }
-        public ICollection<Characteristic_Product> Characteristic_Products { get; set; }
-        public ICollection<Product_Invoice> Product_Invoices { get; set; }
-        public ICollection<Source_Product> Source_Product { get; set; }
-        public ICollection<Product_Tax> Product_Tax { get; set; }
+        public List<CategoryResponseDto> Categories { get; set; }
+        public List<CharacteristicResponseDto> Characteristics { get; set; }
+        public SourceResponseDto Source { get; set; }
+        public List<TaxResponseDto> Taxs { get; set; }
     }
 }

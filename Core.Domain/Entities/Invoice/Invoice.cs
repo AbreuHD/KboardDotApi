@@ -23,6 +23,6 @@ namespace Core.Domain.Entities.Invoice
         public double Total { get; set; }
         public bool Finished { get; set; }
 
-        public ICollection<Product_invoice> Product_Invoices { get; set; }
+        public ICollection<Product_Invoice> Product_Invoices { get; set; }
     }
 }

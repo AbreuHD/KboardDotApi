@@ -18,6 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication();
 builder.Services.AddIdentityInfrastructure(builder.Configuration);
 builder.Services.AddApplicationLayer(builder.Configuration);
+builder.Services.AddPersistenceInfraestructure(builder.Configuration);
 builder.Services.AddApiVersioningExtension();
 
 var app = builder.Build();

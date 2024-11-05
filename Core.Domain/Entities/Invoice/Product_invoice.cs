@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Domain.Entities.Invoice
 {
-    public class Product_invoice : AuditableBase
+    public class Product_Invoice : AuditableBase
     {
         public int InvoiceId { get; set; }
         public Invoice Invoice { get; set; }
