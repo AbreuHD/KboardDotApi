@@ -1,10 +1,14 @@
 ﻿using AutoMapper;
 using Core.Application.Dtos.Inventory.Create;
 using Core.Application.Dtos.Inventory.Response;
+using Core.Application.Dtos.Leads.Create;
+using Core.Application.Dtos.Leads.Response;
 using Core.Application.Features.Inventory.Miscellaneous.Command;
 using Core.Application.Features.Inventory.Product.Command;
+using Core.Application.Features.Leads.Lead.Command;
 using Core.Domain.Entities.Category;
 using Core.Domain.Entities.Characteristics;
+using Core.Domain.Entities.Leads;
 using Core.Domain.Entities.Product;
 using Core.Domain.Entities.Source;
 using Core.Domain.Entities.Taxes;
@@ -69,6 +73,16 @@ namespace Core.Application.Mappings
             
             CreateMap<TrackingTypeResponseDto, TrackingType>()
                 .ReverseMap();
+       
+            CreateMap<AddLeadCommand, Leads>()
+               .ReverseMap();
+
+            CreateMap<DetailsLeadsResponseDto, Leads>()
+                .ReverseMap();
+
+            CreateMap<CreateLeadDto, Leads>()
+               .ReverseMap();
+            //me falta el mapeo de los dto
         }
     }
 }
